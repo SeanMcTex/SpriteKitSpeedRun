@@ -25,6 +25,7 @@
 		21098414192A31710094521E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210983EC192A31710094521E /* UIKit.framework */; };
 		2109841C192A31710094521E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2109841A192A31710094521E /* InfoPlist.strings */; };
 		2109841E192A31710094521E /* SpriteKitSpeedRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109841D192A31710094521E /* SpriteKitSpeedRunTests.m */; };
+		21098428192A35300094521E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 21098427192A35300094521E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		21098419192A31710094521E /* SpriteKitSpeedRunTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitSpeedRunTests-Info.plist"; sourceTree = "<group>"; };
 		2109841B192A31710094521E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2109841D192A31710094521E /* SpriteKitSpeedRunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSpeedRunTests.m; sourceTree = "<group>"; };
+		21098427192A35300094521E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				21098417192A31710094521E /* SpriteKitSpeedRunTests */,
 				210983E7192A31710094521E /* Frameworks */,
 				210983E6192A31710094521E /* Products */,
+				21098427192A35300094521E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21098428192A35300094521E /* README.md in Resources */,
 				21098409192A31710094521E /* Spaceship.png in Resources */,
 				2109840B192A31710094521E /* Images.xcassets in Resources */,
 				21098401192A31710094521E /* Main_iPad.storyboard in Resources */,
