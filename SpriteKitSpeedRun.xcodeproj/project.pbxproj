@@ -26,6 +26,8 @@
 		2109841C192A31710094521E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2109841A192A31710094521E /* InfoPlist.strings */; };
 		2109841E192A31710094521E /* SpriteKitSpeedRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109841D192A31710094521E /* SpriteKitSpeedRunTests.m */; };
 		21098428192A35300094521E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 21098427192A35300094521E /* README.md */; };
+		2178E1CF192BD0DC0041252D /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2178E1CD192BD0DC0041252D /* StarField.sks */; };
+		2178E1D0192BD0DC0041252D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2178E1CE192BD0DC0041252D /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		2109841B192A31710094521E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2109841D192A31710094521E /* SpriteKitSpeedRunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSpeedRunTests.m; sourceTree = "<group>"; };
 		21098427192A35300094521E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		2178E1CD192BD0DC0041252D /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
+		2178E1CE192BD0DC0041252D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 				21098408192A31710094521E /* Spaceship.png */,
 				2109840A192A31710094521E /* Images.xcassets */,
 				210983F1192A31710094521E /* Supporting Files */,
+				2178E1CD192BD0DC0041252D /* StarField.sks */,
+				2178E1CE192BD0DC0041252D /* spark.png */,
 			);
 			path = SpriteKitSpeedRun;
 			sourceTree = "<group>";
@@ -251,6 +257,8 @@
 				21098409192A31710094521E /* Spaceship.png in Resources */,
 				2109840B192A31710094521E /* Images.xcassets in Resources */,
 				21098401192A31710094521E /* Main_iPad.storyboard in Resources */,
+				2178E1CF192BD0DC0041252D /* StarField.sks in Resources */,
+				2178E1D0192BD0DC0041252D /* spark.png in Resources */,
 				210983FE192A31710094521E /* Main_iPhone.storyboard in Resources */,
 				210983F5192A31710094521E /* InfoPlist.strings in Resources */,
 			);
@@ -491,6 +499,7 @@
 				21098423192A31710094521E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21098424192A31710094521E /* Build configuration list for PBXNativeTarget "SpriteKitSpeedRunTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +508,7 @@
 				21098426192A31710094521E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
