@@ -17,5 +17,23 @@
 
 * In **myScene.m** *initWithSize*, add this:
 
+---
+
     [self setupStarfield];
+
+Then add implementation:
+
+	-(void)setupStarfield {
+        NSString *starfieldPath = [[NSBundle mainBundle] pathForResource:@"StarField" ofType:@"sks"];
+        SKEmitterNode *starfieldNode = [NSKeyedUnarchiver unarchiveObjectWithFile:starfieldPath];
+        starfieldNode.position = CGPointMake( CGRectGetMidX(self.frame), CGRectGetHeight(self.frame));
+    
+        starfieldNode.particleColorSequence = nil;
+        starfieldNode.particleColor = [SKColor redColor];
+        starfieldNode.particleColorBlueRange = 255.0;
+        starfieldNode.particleColorGreenRange = 255.0;
+    
+        [self addChild:starfieldNode];
+    }
+
 
