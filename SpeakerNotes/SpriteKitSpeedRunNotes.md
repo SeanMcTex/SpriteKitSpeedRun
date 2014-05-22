@@ -67,3 +67,31 @@ And finally, we call the new method in the init:
 
     		[self setupShipNode];
 
+## Add Score
+
+A space shooter isn't much fun if you don't get points! Let's add a property to keep track of our score node:
+
+	@property (strong) SKLabelNode *scoreNode;
+
+Let's add a node for displaying a 1UP label and our score:
+
+	-(void)setupScoreNode {
+		SKLabelNode *oneUpNode = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+		oneUpNode.fontColor = [SKColor whiteColor];
+		oneUpNode.position = CGPointMake( 50, CGRectGetMaxY(self.frame) - 50);
+		oneUpNode.text = @"1UP";
+	
+		SKLabelNode *scoreNode = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+		scoreNode.fontColor = [SKColor redColor];
+		scoreNode.position = CGPointMake( 50, CGRectGetMaxY(self.frame) - 100 );
+		scoreNode.text = @"0";
+	
+		[self addChild:oneUpNode];
+		[self addChild:scoreNode];
+		self.scoreNode = scoreNode;
+	}
+
+And finally, we call it:
+
+    		[self setupScoreNode];
+

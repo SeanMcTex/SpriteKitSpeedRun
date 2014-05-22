@@ -11,6 +11,7 @@
 @interface MMMyScene ()
 
 @property (strong) SKSpriteNode *shipNode;
+@property (strong) SKLabelNode *scoreNode;
 
 @end
 
@@ -21,6 +22,7 @@
 
         [self setupStarfield];
         [self setupShipNode];
+        [self setupScoreNode];
     }
     return self;
 }
@@ -57,6 +59,23 @@
     [self addChild:shipNode];
     self.shipNode = shipNode;
 }
+
+-(void)setupScoreNode {
+    SKLabelNode *oneUpNode = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+    oneUpNode.fontColor = [SKColor whiteColor];
+    oneUpNode.position = CGPointMake( 50, CGRectGetMaxY(self.frame) - 50);
+    oneUpNode.text = @"1UP";
+    
+    SKLabelNode *scoreNode = [SKLabelNode labelNodeWithFontNamed:@"Futura-CondensedExtraBold"];
+    scoreNode.fontColor = [SKColor redColor];
+    scoreNode.position = CGPointMake( 50, CGRectGetMaxY(self.frame) - 100 );
+    scoreNode.text = @"0";
+    
+    [self addChild:oneUpNode];
+    [self addChild:scoreNode];
+    self.scoreNode = scoreNode;
+}
+
 
 
 @end
