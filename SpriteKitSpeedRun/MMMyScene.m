@@ -8,13 +8,19 @@
 
 #import "MMMyScene.h"
 
+@interface MMMyScene ()
+
+@property (strong) SKSpriteNode *shipNode;
+
+@end
+
 @implementation MMMyScene
 
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
+
         [self setupStarfield];
-        
+        [self setupShipNode];
     }
     return self;
 }
@@ -43,5 +49,14 @@
     
     [self addChild:starfieldNode];
 }
+
+-(void)setupShipNode {
+    SKSpriteNode *shipNode = [SKSpriteNode spriteNodeWithImageNamed:@"ship.png"];
+    shipNode.position = CGPointMake( CGRectGetMidX(self.frame), 50);
+    
+    [self addChild:shipNode];
+    self.shipNode = shipNode;
+}
+
 
 @end

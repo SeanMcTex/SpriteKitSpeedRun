@@ -1,5 +1,7 @@
 # Sprite Kit Speed Run Speaker Notes
 
+* (These notes are designed to be used with Jonathan Penn's excellent [KeyGrip](https://github.com/rubbercitywizards/KeyGrip) utility.)
+
 ## Create New Project, Strip Template Code
 
 * In Xcode, select New -> Project -> SpriteKit Game
@@ -36,4 +38,32 @@ Then add implementation:
         [self addChild:starfieldNode];
     }
 
+## Add Ship
+
+Ok, now we need a spaceship for you to fly! First off, let's create a new Asset Catalog. (SpriteTextures)
+
+Now drag the spaceship image in from our assets folder.
+
+Finally, let's add some code. Our scene needs a property to keep track of the ship node:
+
+    @interface MMMyScene ()
+    
+    @property (strong) SKSpriteNode *shipNode;
+    
+    @end
+
+Then we add some code to add the ship node to the scene:
+
+	-(void)setupShipNode {
+		SKSpriteNode *shipNode = [SKSpriteNode spriteNodeWithImageNamed:@"ship.png"];
+		shipNode.position = CGPointMake( CGRectGetMidX(self.frame), 50);
+		shipNode.size = CGSizeMake( CGRectGetWidth(shipNode.frame) * 2, CGRectGetWidth( shipNode.frame) * 2);
+	
+		[self addChild:shipNode];
+		self.shipNode = shipNode;
+	}
+
+And finally, we call the new method in the init:
+
+    		[self setupShipNode];
 

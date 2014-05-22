@@ -28,6 +28,7 @@
 		21098428192A35300094521E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 21098427192A35300094521E /* README.md */; };
 		2178E1CF192BD0DC0041252D /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2178E1CD192BD0DC0041252D /* StarField.sks */; };
 		2178E1D0192BD0DC0041252D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2178E1CE192BD0DC0041252D /* spark.png */; };
+		219F6244192E53350054F227 /* SpriteTextures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219F6243192E53340054F227 /* SpriteTextures.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		21098427192A35300094521E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		2178E1CD192BD0DC0041252D /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
 		2178E1CE192BD0DC0041252D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		219F6243192E53340054F227 /* SpriteTextures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SpriteTextures.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				210983F1192A31710094521E /* Supporting Files */,
 				2178E1CD192BD0DC0041252D /* StarField.sks */,
 				2178E1CE192BD0DC0041252D /* spark.png */,
+				219F6243192E53340054F227 /* SpriteTextures.xcassets */,
 			);
 			path = SpriteKitSpeedRun;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				2109840B192A31710094521E /* Images.xcassets in Resources */,
 				21098401192A31710094521E /* Main_iPad.storyboard in Resources */,
 				2178E1CF192BD0DC0041252D /* StarField.sks in Resources */,
+				219F6244192E53350054F227 /* SpriteTextures.xcassets in Resources */,
 				2178E1D0192BD0DC0041252D /* spark.png in Resources */,
 				210983FE192A31710094521E /* Main_iPhone.storyboard in Resources */,
 				210983F5192A31710094521E /* InfoPlist.strings in Resources */,
